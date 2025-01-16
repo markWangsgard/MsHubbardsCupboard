@@ -15,7 +15,6 @@ public class User
     }
     public User(string name, string pathToProfilePicture) : this(name)
     {
-
         PathToProfilePicture = pathToProfilePicture;
     }
 }

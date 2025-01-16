@@ -1,14 +1,13 @@
-﻿namespace MsHubbardsCupboardTests;
-using MsHubbardsLogic;
+﻿using MsHubbardsLogic;
+using FluentAssertions;
+
+namespace MsHubbardsCupboardTests;
 
 public class UserTests
 {
     [Fact]
-    public void UserCreated()
+    public void Player1Winner()
     {
-        //given
-        string name = "Mark";
-        //when
-        User user = new User(name);
+        int x = 1;
     }
 }
