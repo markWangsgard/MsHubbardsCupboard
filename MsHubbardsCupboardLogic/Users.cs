@@ -14,6 +14,6 @@ public class UserLogic
 
     public void AddIngredient(Ingreident ingredient)
     {
-
+        Pantry.Add(ingredient);
     }
 }
