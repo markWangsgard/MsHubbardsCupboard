@@ -1,4 +1,4 @@
-namespace IngridentLogic;
+namespace MsHubbardsLogic;
 
 public class Ingreident
 {

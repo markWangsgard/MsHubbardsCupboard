@@ -1,5 +1,4 @@
-namespace RecipeLogic;
-using IngridentLogic;
+namespace MsHubbardsLogic;
 
 public class Recipe
 {

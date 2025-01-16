@@ -1,19 +1,21 @@
-using IngridentLogic;
-using RecipeLogic;
+namespace MsHubbardsLogic;
 
-namespace UserLogic;
-
-public class UserLogic
+public class User
 {
     public string Name { get; set; }
-    public List<Recipe> UploadedRecipes { get; set; }
-    public List<Recipe> RecipesSaved { get; set; }
-    public List<Ingreident> IngreidentsInCupboard { get; set; }
     public string PathToProfilePicture { get; set; }
-    public List<Ingreident> Pantry { get; set;}
+    public List<Recipe> UploadedRecipes { get; set; } = new List<Recipe>();
+    public List<Recipe> RecipesSaved { get; set; } = new List<Recipe>();
+    public List<Ingreident> IngreidentsInCupboard { get; set; } = new List<Ingreident>();
 
-    public void AddIngredient(Ingreident ingredient)
+    public User(string name)
     {
-        Pantry.Add(ingredient);
+        Name = name;
+        PathToProfilePicture = "ProfilePicture.svg";
+    }
+    public User(string name, string pathToProfilePicture) : this(name)
+    {
+
+        PathToProfilePicture = pathToProfilePicture;
     }
 }
